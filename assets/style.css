@@ -1,0 +1,233 @@
+/* Arrow Path GO — huisstijl afgeleid van het app-icoon: donkergroene nacht,
+   fel groen pijl-accent, asfaltgrijs en gele wegmarkering. */
+:root {
+  --bg: #071807;
+  --bg-deep: #04120400;
+  --surface: #0F2B12;
+  --surface-2: #14361743;
+  --line: #23532a;
+  --green: #6ED11A;
+  --green-bright: #A6F03A;
+  --green-glow: rgba(140, 224, 26, 0.35);
+  --yellow: #F5C400;
+  --text: #E8F6E2;
+  --muted: #9DBE96;
+  --radius: 16px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(1200px 600px at 50% -10%, #12401a 0%, transparent 60%),
+    var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.7;
+  font-size: 17px;
+  overflow-x: hidden;
+}
+
+/* ---------- Bewegende wegstrook: verwijst naar de weg in het logo ---------- */
+.road {
+  position: relative;
+  height: 8px;
+  background: linear-gradient(180deg, #1b1b1b, #2b2b2b);
+  overflow: hidden;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+.road::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--yellow) 0 28px,
+    transparent 28px 72px
+  );
+  opacity: 0.85;
+  animation: road-move 1.6s linear infinite;
+}
+@keyframes road-move {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-72px); }
+}
+
+/* ---------- Zwevende pijlen op de achtergrond ---------- */
+.arrows {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+.arrows span {
+  position: absolute;
+  color: var(--green);
+  opacity: 0.10;
+  font-size: 42px;
+  animation: drift linear infinite;
+}
+@keyframes drift {
+  from { transform: translateY(105vh) rotate(0deg); }
+  to   { transform: translateY(-20vh) rotate(24deg); }
+}
+
+.wrap {
+  position: relative;
+  z-index: 1;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 28px 20px 72px;
+}
+
+/* ---------- Header ---------- */
+header.site {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--line);
+}
+header.site img {
+  width: 84px;
+  height: auto;
+  flex-shrink: 0;
+  filter: drop-shadow(0 6px 18px var(--green-glow));
+  animation: bob 3.4s ease-in-out infinite;
+}
+@keyframes bob {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-7px); }
+}
+h1 {
+  margin: 0 0 4px;
+  font-size: 30px;
+  line-height: 1.2;
+  color: #fff;
+  letter-spacing: 0.3px;
+}
+h1 .accent { color: var(--green-bright); }
+
+.tagline { color: var(--muted); margin: 0; font-size: 15px; }
+
+/* ---------- Navigatie ---------- */
+nav.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 22px 0 8px;
+}
+nav.tabs a {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--text);
+  border: 1px solid var(--line);
+  background: var(--surface);
+  transition: transform 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+nav.tabs a:hover { transform: translateY(-2px); border-color: var(--green); color: var(--green-bright); }
+nav.tabs a[aria-current="page"] {
+  background: linear-gradient(180deg, var(--green), #4da310);
+  border-color: var(--green-bright);
+  color: #06230a;
+}
+
+/* ---------- Inhoud ---------- */
+h2 {
+  font-size: 21px;
+  margin: 34px 0 10px;
+  color: var(--green-bright);
+  padding-left: 14px;
+  border-left: 4px solid var(--green);
+}
+a { color: var(--green-bright); }
+p, li { color: var(--text); }
+ul { padding-left: 22px; }
+li { margin: 0.35em 0; }
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 18px 22px;
+  margin: 18px 0;
+}
+.card.highlight { border-color: var(--green); box-shadow: 0 0 0 1px rgba(110,209,26,0.15), 0 10px 30px rgba(0,0,0,0.35); }
+
+.pill {
+  display: inline-block;
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 2px 12px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+table.data {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 14px 0;
+  font-size: 15px;
+}
+table.data th, table.data td {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+table.data th { color: var(--green-bright); font-weight: 700; }
+.table-scroll { overflow-x: auto; }
+
+details {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 4px 18px;
+  margin: 12px 0;
+}
+summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 17px;
+  padding: 12px 0;
+  color: var(--green-bright);
+  list-style: none;
+}
+summary::-webkit-details-marker { display: none; }
+summary::before { content: "▸ "; display: inline-block; transition: transform 0.2s ease; }
+details[open] summary::before { transform: rotate(90deg); }
+
+footer.site {
+  margin-top: 52px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 15px;
+}
+
+/* ---------- Scroll-reveal ---------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.reveal.in { opacity: 1; transform: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  .reveal { opacity: 1; transform: none; }
+}
+
+@media (max-width: 560px) {
+  header.site img { width: 60px; }
+  h1 { font-size: 24px; }
+  body { font-size: 16px; }
+}

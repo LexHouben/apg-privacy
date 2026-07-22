@@ -4,136 +4,144 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacybeleid — Arrow Path GO</title>
-<style>
-  :root{
-    --bg:#F2F6FC; --surface:#FFFFFF; --primary:#1857B8; --accent:#F2811F;
-    --text:#16233D; --muted:#54627B; --line:#D9E3F2;
-  }
-  *{box-sizing:border-box}
-  body{margin:0;background:var(--bg);color:var(--text);
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    line-height:1.65;font-size:18px}
-  .wrap{max-width:820px;margin:0 auto;padding:32px 20px 64px}
-  header{border-bottom:3px solid var(--primary);padding-bottom:16px;margin-bottom:8px;display:flex;gap:16px;align-items:flex-start}
-  .logo{width:64px;height:64px;border-radius:16px;box-shadow:0 4px 14px rgba(24,87,184,.25);flex-shrink:0}
-  h1{color:var(--primary);font-size:30px;margin:.2em 0}
-  h2{color:var(--primary);font-size:23px;margin-top:1.6em;border-left:5px solid var(--accent);padding-left:12px}
-  a{color:var(--primary)}
-  .card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 22px;margin:18px 0}
-  .muted{color:var(--muted)}
-  .lang{display:inline-block;background:var(--primary);color:#fff;border-radius:20px;
-    padding:6px 16px;text-decoration:none;font-weight:600;margin:4px 6px 4px 0}
-  ul{padding-left:22px}
-  li{margin:.35em 0}
-  footer{margin-top:48px;border-top:1px solid var(--line);padding-top:18px;color:var(--muted);font-size:16px}
-  .pill{display:inline-block;background:#E5EEFB;border:1px solid var(--line);border-radius:20px;padding:2px 12px;font-size:15px;color:var(--muted)}
-</style>
+<meta name="description" content="Privacybeleid van Arrow Path GO: welke gegevens de app lokaal bewaart, wat er voor de online ranglijst wordt verwerkt en hoe je je gegevens laat verwijderen.">
+<link rel="icon" href="assets/icon.png">
+<link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
+<div class="arrows" aria-hidden="true"></div>
+<div class="road" aria-hidden="true"></div>
+
 <div class="wrap">
-  <header>
-    <img class="logo" src="logo.png" alt="Arrow Path GO logo">
+  <header class="site">
+    <img src="assets/logo.png" alt="Arrow Path GO">
     <div>
-      <h1>Privacybeleid</h1>
-      <p class="muted">Arrow Path GO · <span class="pill">Laatst bijgewerkt: 4 juli 2026</span></p>
-      <a class="lang" href="#nl">Nederlands</a>
-      <a class="lang" href="#en">English</a>
-      <a class="lang" href="support/">Support</a>
+      <h1>Privacy<span class="accent">beleid</span></h1>
+      <p class="tagline">Arrow Path GO &middot; <span class="pill">Bijgewerkt: 22 juli 2026</span></p>
     </div>
   </header>
 
-  <!-- ===================== NEDERLANDS ===================== -->
-  <section id="nl">
+  <nav class="tabs">
+    <a href="./" aria-current="page">Privacy (NL)</a>
+    <a href="en/">Privacy (EN)</a>
+    <a href="support/">Support</a>
+  </nav>
+
+  <section class="reveal">
+    <div class="card highlight">
+      <strong>In het kort</strong>
+      <ul>
+        <li>Je <strong>voortgang, sterren, beste tijden, levens, streak en instellingen blijven op je toestel</strong>.</li>
+        <li>Voor de <strong>online ranglijst</strong> maakt de app een <strong>anoniem account</strong> aan: een willekeurig ID, zonder e-mailadres, naam of wachtwoord.</li>
+        <li>Speel je een level uit, dan worden je <strong>weergavenaam en resultaat</strong> naar de ranglijst gestuurd. Die naam is <strong>zichtbaar voor andere spelers</strong>.</li>
+        <li>De app toont <strong>advertenties via Google AdMob</strong> om de gratis versie mogelijk te maken.</li>
+        <li>Wij vragen <strong>nooit</strong> om je echte naam, adres, telefoonnummer of betaalgegevens.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="reveal">
     <h2>1. Wie zijn wij</h2>
-    <p>Arrow Path GO is een pijl-puzzelspel, ontwikkeld door <strong>MAR-Team</strong>. Vragen? Mail ons op
+    <p>Arrow Path GO is een pijl-puzzelspel, ontwikkeld door <strong>MAR-Team</strong>. Wij zijn verantwoordelijk
+    voor de verwerking van de gegevens die hieronder staan beschreven. Vragen of verzoeken? Mail
     <a href="mailto:smartapps.ev@gmail.com">smartapps.ev@gmail.com</a>.</p>
+  </section>
 
-    <h2>2. Korte samenvatting</h2>
-    <div class="card">
-      <ul>
-        <li>Je <strong>levelvoortgang, sterren, beste tijden, streak en instellingen blijven lokaal op je toestel</strong>.</li>
-        <li>Er is <strong>geen account</strong> nodig en wij hebben <strong>geen eigen server</strong>.</li>
-        <li>Wij verzamelen <strong>zelf geen persoonsgegevens</strong> en gebruiken geen eigen analytics of trackingsoftware.</li>
-        <li>De app toont <strong>advertenties via Google AdMob</strong> (banner, tussenschermen, beloningsadvertenties
-        en app-open advertenties) om de gratis versie mogelijk te maken.</li>
-      </ul>
-    </div>
-
-    <h2>3. Gegevens die op je toestel blijven</h2>
-    <p>De app slaat het volgende alleen <strong>lokaal</strong> op (in de opslag van de app):</p>
+  <section class="reveal">
+    <h2>2. Gegevens die alleen op je toestel blijven</h2>
+    <p>Het grootste deel van je spelgegevens verlaat je toestel nooit. De app bewaart lokaal:</p>
     <ul>
-      <li>welke levels je hebt ontgrendeld en opgelost, met sterren en beste tijd per level;</li>
-      <li>je dagelijkse speelreeks (streak) en het aantal hints dat je nog hebt;</li>
-      <li>je instellingen (taal, thema, geluid, trilling).</li>
+      <li>welke levels je hebt ontgrendeld en opgelost, met sterren, beste score en beste tijd per level;</li>
+      <li>je levens en opgespaarde bonuslevens, je dagelijkse reeks (streak), je streak-freeze en behaalde mijlpalen;</li>
+      <li>het aantal hints dat je nog hebt;</li>
+      <li>je instellingen (taal, thema, geluid, muziek, trilling).</li>
     </ul>
-    <p>Deze gegevens worden <strong>niet</strong> naar ons of naar een server gestuurd. Er is op dit moment
-    geen aparte "gegevens wissen"-knop in de app; alle lokaal opgeslagen gegevens verdwijnen wanneer je de
-    app verwijdert.</p>
-
-    <h2>4. Advertenties</h2>
-    <p>Arrow Path GO toont advertenties via <strong>Google AdMob</strong>: banneradvertenties, tussenschermen
-    (interstitials), beloningsadvertenties (bijvoorbeeld voor een extra hint) en app-open advertenties. Google
-    kan daarbij gegevens verwerken zoals een advertentie-identificatie, algemene locatie (op basis van IP),
-    apparaatgegevens en interacties met advertenties. Lees hoe Google gegevens gebruikt:
-    <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Google – Hoe Google gegevens gebruikt</a>
-    en het <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">privacybeleid van Google</a>.
-    Je kunt gepersonaliseerde advertenties beperken via de advertentie-instellingen van je toestel
-    (bijvoorbeeld "Advertentiepersonalisatie uitschakelen" in je Google-account of besturingssysteem).</p>
-
-    <h2>5. Kinderen</h2>
-    <p>De app is niet specifiek gericht op kinderen. We verzamelen niet bewust gegevens van kinderen.</p>
-
-    <h2>6. Jouw rechten &amp; wijzigingen</h2>
-    <p>Omdat je gegevens lokaal op je toestel blijven, heb je er zelf volledige controle over: verwijder de
-    app om alle gegevens te wissen. We kunnen dit privacybeleid bijwerken als de app verandert; de datum
-    bovenaan toont de laatste wijziging. Vragen? Mail
-    <a href="mailto:smartapps.ev@gmail.com">smartapps.ev@gmail.com</a>.</p>
+    <p>Deze gegevens worden niet naar ons gestuurd en verdwijnen wanneer je de app verwijdert.</p>
   </section>
 
-  <!-- ===================== ENGLISH ===================== -->
-  <section id="en">
-    <h2>1. Who we are (English)</h2>
-    <p>Arrow Path GO is an arrow puzzle game by <strong>MAR-Team</strong>. Questions? Email
-    <a href="mailto:smartapps.ev@gmail.com">smartapps.ev@gmail.com</a>.</p>
+  <section class="reveal">
+    <h2>3. De online ranglijst</h2>
+    <p>Om je score met andere spelers te kunnen vergelijken, gebruikt de app <strong>Firebase</strong> van Google
+    (Authentication, Cloud Firestore, Cloud Functions en App Check).</p>
 
-    <h2>2. Summary</h2>
-    <div class="card">
-      <ul>
-        <li>Your <strong>level progress, stars, best times, streak and settings stay locally on your device</strong>.</li>
-        <li><strong>No account</strong> is required and we run <strong>no server of our own</strong>.</li>
-        <li>We <strong>do not collect personal data ourselves</strong> and use no analytics or tracking software of our own.</li>
-        <li>The app shows <strong>ads via Google AdMob</strong> (banner, interstitial, rewarded and app-open
-        ads) to support the free version.</li>
-      </ul>
+    <p><strong>Anoniem account.</strong> Bij het eerste gebruik logt de app <em>anoniem</em> in. Je krijgt daarbij een
+    willekeurig gebruikers-ID. Er is géén e-mailadres, wachtwoord of sociale login bij betrokken, en dat ID is voor
+    ons niet herleidbaar tot jou als persoon.</p>
+
+    <p><strong>Weergavenaam.</strong> De app genereert automatisch een neutrale naam (bijvoorbeeld
+    &ldquo;Player4821&rdquo;). Je kunt die in de instellingen zelf wijzigen naar een naam van 3 tot 20 tekens.
+    Let op: <strong>de naam die je kiest is zichtbaar voor alle andere spelers</strong> op de ranglijst. Kies daarom
+    geen naam die jou persoonlijk identificeert.</p>
+
+    <p><strong>Wat er per uitgespeeld level wordt opgeslagen:</strong></p>
+    <div class="table-scroll">
+      <table class="data">
+        <tr><th>Gegeven</th><th>Waarom</th></tr>
+        <tr><td>Gebruikers-ID (anoniem)</td><td>Je resultaat aan één speler koppelen</td></tr>
+        <tr><td>Weergavenaam</td><td>Tonen in de ranglijst</td></tr>
+        <tr><td>Levelnummer, score, aantal fouten, tijd, gebruikte hints</td><td>De ranglijst opbouwen en de score berekenen</td></tr>
+        <tr><td>Tijdstip van voltooien</td><td>Volgorde en geldigheid van inzendingen</td></tr>
+        <tr><td>App-versie en levelversie</td><td>Scores van verschillende versies eerlijk vergelijken</td></tr>
+      </table>
     </div>
 
-    <h2>3. Data kept on your device</h2>
-    <p>The app stores the following <strong>locally only</strong>: which levels you unlocked and solved,
-    with stars and best time per level; your daily play streak and remaining hints; and your settings
-    (language, theme, sound, haptics). This data is never sent to us or to a server. There is currently no
-    separate "clear data" button in the app; all locally stored data is removed when you uninstall the app.</p>
+    <p><strong>Beveiliging tegen misbruik.</strong> Om vals spelen tegen te gaan worden scores op de server
+    gecontroleerd en geldt er een limiet op het aantal inzendingen per speler. Firebase App Check (Play Integrity op
+    Android, App Attest op iOS) controleert daarbij of een verzoek echt van de officiële app komt.</p>
 
-    <h2>4. Advertising</h2>
-    <p>Arrow Path GO shows ads via <strong>Google AdMob</strong>: banner ads, interstitials, rewarded ads
-    (for example for an extra hint) and app-open ads. Google may process data such as an advertising
-    identifier, coarse location (from IP), device information and ad interactions. See
-    <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">how Google uses data</a>
-    and the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.
-    You can limit personalized ads through your device's ad settings (for example "Opt out of ad
-    personalization" in your Google account or operating system).</p>
+    <p>Google verwerkt deze gegevens als onze verwerker; opslag en verwerking kunnen daarbij ook buiten de Europese
+    Unie plaatsvinden. Zie het <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">privacy- en beveiligingsbeleid van Firebase</a>.</p>
 
-    <h2>5. Children</h2>
-    <p>The app is not specifically directed at children. We do not knowingly collect data from children.</p>
-
-    <h2>6. Your rights &amp; changes</h2>
-    <p>Because your data stays on your device, you are fully in control — uninstall the app to erase all
-    data. We may update this policy as the app changes; the date at the top reflects the latest change.
-    Contact: <a href="mailto:smartapps.ev@gmail.com">smartapps.ev@gmail.com</a>.</p>
+    <p>Heb je geen internetverbinding, dan bewaart de app je resultaat tijdelijk op je toestel en verstuurt het
+    zodra je weer online bent.</p>
   </section>
 
-  <footer>
-    <p>© 2026 MAR-Team · Arrow Path GO · <a href="support/">Support &amp; veelgestelde vragen</a></p>
+  <section class="reveal">
+    <h2>4. Advertenties</h2>
+    <p>Arrow Path GO toont advertenties via <strong>Google AdMob</strong>: banners, tussenschermen (interstitials),
+    beloningsadvertenties (bijvoorbeeld voor een extra hint, een extra leven of extra tijd) en app-open
+    advertenties. Google kan daarbij gegevens verwerken zoals een advertentie-identificatie, globale locatie (op
+    basis van je IP-adres), apparaatgegevens en je interacties met advertenties.</p>
+    <p>Op iOS vraagt de app bij de eerste start via het venster van Apple (App Tracking Transparency) of je
+    tracking toestaat. Zeg je nee, dan krijg je nog steeds advertenties, maar minder op jou afgestemd. Op Android
+    kun je advertentiepersonalisatie uitschakelen in de instellingen van je Google-account.</p>
+    <p>Meer informatie: <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">hoe Google gegevens gebruikt</a>
+    en het <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">privacybeleid van Google</a>.</p>
+  </section>
+
+  <section class="reveal">
+    <h2>5. Hoe lang we gegevens bewaren</h2>
+    <p>Je lokale gegevens bewaar je zelf: ze verdwijnen zodra je de app verwijdert. Je ranglijst-resultaten blijven
+    staan zolang de ranglijst bestaat, of tot je ons vraagt ze te verwijderen (zie punt 7).</p>
+  </section>
+
+  <section class="reveal">
+    <h2>6. Kinderen</h2>
+    <p>De app is niet specifiek gericht op kinderen en wij verzamelen niet bewust gegevens van kinderen. Omdat een
+    zelfgekozen weergavenaam zichtbaar is voor andere spelers, raden we jonge spelers aan hun echte naam niet te
+    gebruiken.</p>
+  </section>
+
+  <section class="reveal">
+    <h2>7. Jouw rechten</h2>
+    <p>Je hebt het recht om je gegevens in te zien, te laten corrigeren of te laten verwijderen. Voor je lokale
+    gegevens kun je dat zelf doen door de app te verwijderen. Voor je ranglijst-gegevens mail je
+    <a href="mailto:smartapps.ev@gmail.com">smartapps.ev@gmail.com</a>; vermeld daarbij je <strong>weergavenaam</strong>,
+    zodat we de juiste inzending kunnen terugvinden. Omdat het account anoniem is, kunnen we een verzoek zonder die
+    gegevens helaas niet uitvoeren.</p>
+    <p>Ben je het oneens met hoe wij met je gegevens omgaan, dan kun je een klacht indienen bij de bevoegde
+    toezichthouder voor gegevensbescherming in jouw land.</p>
+  </section>
+
+  <section class="reveal">
+    <h2>8. Wijzigingen</h2>
+    <p>We werken dit privacybeleid bij wanneer de app verandert. De datum bovenaan toont de laatste wijziging.</p>
+  </section>
+
+  <footer class="site">
+    <p>&copy; 2026 MAR-Team &middot; Arrow Path GO &middot; <a href="support/">Support &amp; veelgestelde vragen</a></p>
   </footer>
 </div>
+<script src="assets/site.js"></script>
 </body>
 </html>

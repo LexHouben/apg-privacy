@@ -4,91 +4,155 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Support — Arrow Path GO</title>
-<style>
-  :root{
-    --bg:#F2F6FC; --surface:#FFFFFF; --primary:#1857B8; --accent:#F2811F;
-    --text:#16233D; --muted:#54627B; --line:#D9E3F2;
-  }
-  *{box-sizing:border-box}
-  body{margin:0;background:var(--bg);color:var(--text);
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    line-height:1.65;font-size:18px}
-  .wrap{max-width:820px;margin:0 auto;padding:32px 20px 64px}
-  header{border-bottom:3px solid var(--primary);padding-bottom:16px;margin-bottom:8px;display:flex;gap:16px;align-items:flex-start}
-  .logo{width:64px;height:64px;border-radius:16px;box-shadow:0 4px 14px rgba(24,87,184,.25);flex-shrink:0}
-  h1{color:var(--primary);font-size:30px;margin:.2em 0}
-  h2{color:var(--primary);font-size:23px;margin-top:1.6em;border-left:5px solid var(--accent);padding-left:12px}
-  a{color:var(--primary)}
-  .card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 22px;margin:18px 0}
-  .muted{color:var(--muted)}
-  .lang{display:inline-block;background:var(--primary);color:#fff;border-radius:20px;
-    padding:6px 16px;text-decoration:none;font-weight:600;margin:4px 6px 4px 0}
-  details{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:6px 16px;margin:12px 0}
-  summary{font-weight:600;cursor:pointer;padding:10px 0;font-size:19px;color:var(--primary)}
-  .big{font-size:20px}
-  footer{margin-top:48px;border-top:1px solid var(--line);padding-top:18px;color:var(--muted);font-size:16px}
-</style>
+<meta name="description" content="Hulp bij Arrow Path GO: veelgestelde vragen over levens, de dagelijkse reeks, de ranglijst, advertenties en instellingen.">
+<link rel="icon" href="../assets/icon.png">
+<link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
+<div class="arrows" aria-hidden="true"></div>
+<div class="road" aria-hidden="true"></div>
+
 <div class="wrap">
-  <header>
-    <img class="logo" src="../logo.png" alt="Arrow Path GO logo">
+  <header class="site">
+    <img src="../assets/logo.png" alt="Arrow Path GO">
     <div>
-      <h1>Support</h1>
-      <p class="muted">Arrow Path GO</p>
-      <a class="lang" href="../">Privacybeleid</a>
-      <a class="lang" href="mailto:smartapps.ev@gmail.com">Mail ons</a>
+      <h1>Sup<span class="accent">port</span></h1>
+      <p class="tagline">Arrow Path GO &middot; <span class="pill">Hulp &amp; veelgestelde vragen</span></p>
     </div>
   </header>
 
-  <div class="card big">
-    <strong>Contact:</strong> <a href="mailto:smartapps.ev@gmail.com">smartapps.ev@gmail.com</a><br>
-    We helpen je graag. Mail gerust je vraag; vermeld kort welk toestel je gebruikt.
-  </div>
+  <nav class="tabs">
+    <a href="./" aria-current="page">Support (NL)</a>
+    <a href="en/">Support (EN)</a>
+    <a href="../">Privacybeleid</a>
+  </nav>
 
-  <h2>Veelgestelde vragen</h2>
+  <section class="reveal">
+    <div class="card highlight">
+      <strong>Contact:</strong> <a href="mailto:smartapps.ev@gmail.com">smartapps.ev@gmail.com</a><br>
+      We helpen je graag. Mail gerust je vraag &mdash; vermeld kort welk toestel je gebruikt en, als het over de
+      ranglijst gaat, je weergavenaam in het spel.
+    </div>
+  </section>
 
-  <details><summary>Werkt de app zonder internet?</summary>
-    <p>Ja. Alle levels staan in de app en je kunt volledig offline spelen.</p>
-  </details>
+  <section class="reveal">
+    <h2>Het spel</h2>
 
-  <details><summary>Welke gegevens verzamelen jullie?</summary>
-    <p>Wij verzamelen zelf geen persoonsgegevens en hebben geen eigen server. Je levelvoortgang, sterren,
-    streak en instellingen blijven lokaal op je toestel. Zie het <a href="../">privacybeleid</a> voor
-    details.</p>
-  </details>
+    <details><summary>Hoe speel ik Arrow Path GO?</summary>
+      <p>Tik een pijl aan om hem van het bord te laten rijden. Dat lukt alleen als de baan vóór die pijl helemaal
+      vrij is tot buiten het raster. Zit er nog een andere pijl in de weg, dan kost de tik je een leven. Maak het
+      bord leeg om het level te voltooien.</p>
+    </details>
 
-  <details><summary>Hoe verwijder ik mijn gegevens?</summary>
-    <p>Er is op dit moment geen aparte "gegevens wissen"-knop in de app. Verwijder de app om alle lokaal
-    opgeslagen voortgang en instellingen van je toestel te wissen.</p>
-  </details>
+    <details><summary>Werkt de app zonder internet?</summary>
+      <p>Ja. Alle levels staan in de app en je kunt volledig offline spelen. Alleen de online ranglijst heeft
+      internet nodig: speel je offline, dan bewaart de app je resultaat en verstuurt het zodra je weer verbinding
+      hebt.</p>
+    </details>
 
-  <details><summary>Hoe pas ik het thema aan?</summary>
-    <p>Ga naar <em>Instellingen → Thema</em> en kies systeem, licht of donker.</p>
-  </details>
+    <details><summary>Hoe werken de hints?</summary>
+      <p>Een hint wijst een pijl aan die je op dat moment veilig kunt wegspelen. Je hebt een beperkt aantal hints;
+      zijn ze op, dan kun je er via een beloningsvideo een extra verdienen.</p>
+    </details>
 
-  <details><summary>Kan ik het geluid of trillingen uitzetten?</summary>
-    <p>Ja, bij <em>Instellingen</em> vind je aparte schakelaars voor geluid en trilling (haptics).</p>
-  </details>
+    <details><summary>Wat gebeurt er als de tijd op is?</summary>
+      <p>Bij levels met een tijdslimiet krijg je één keer per level de kans om via een beloningsvideo extra tijd te
+      krijgen. De klok begint daarna pas te lopen zodra je weer een pijl aantikt &mdash; net als bij de start van een
+      level.</p>
+    </details>
+  </section>
 
-  <details><summary>Hoe werken de hints?</summary>
-    <p>Elk level kun je een hint gebruiken die een pijl aanwijst die je kunt verwijderen. Je hebt een
-    beperkt aantal hints; ben je door je hints heen, dan verschijnt daarvan een melding in het spel.</p>
-  </details>
+  <section class="reveal">
+    <h2>Levens en de dagelijkse reeks</h2>
 
-  <details><summary>Mijn streak klopt niet</summary>
-    <p>Je streak telt het aantal dagen op rij dat je een level hebt afgerond. Sla je een dag over, dan
-    begint de streak opnieuw. Speel je vandaag of gisteren, dan loopt hij door.</p>
-  </details>
+    <details><summary>Hoe krijg ik nieuwe levens?</summary>
+      <p>Op drie manieren:</p>
+      <ul>
+        <li><strong>Dagelijks inchecken:</strong> open je de app op een nieuwe dag, dan worden je levens aangevuld
+        tot 3. Had je er al 3, dan krijg je een <strong>bonusleven</strong> erbij.</li>
+        <li><strong>Naar het volgende level:</strong> je krijgt er één terug, tot maximaal 3.</li>
+        <li><strong>Beloningsvideo:</strong> ben je al je levens kwijt, dan vult een video je voorraad weer
+        helemaal aan.</li>
+      </ul>
+    </details>
 
-  <details><summary>Is de app in mijn taal beschikbaar?</summary>
-    <p>Arrow Path GO is op dit moment alleen in het Nederlands beschikbaar. Engels en Duits staan gepland
-    voor een volgende update.</p>
-  </details>
+    <details><summary>Wat betekent de &ldquo;+2&rdquo; naast mijn levens?</summary>
+      <p>Dat zijn je bonuslevens: extra levens die je bovenop de standaard 3 hebt opgespaard door elke dag in te
+      checken. Je kunt er standaard maximaal 5 sparen (dus 8 levens in totaal). Haal je een mijlpaal in je
+      dagelijkse reeks, dan gaat dat maximum omhoog.</p>
+    </details>
 
-  <footer>
-    <p>© 2026 MAR-Team · Arrow Path GO · <a href="../">Privacybeleid</a></p>
+    <details><summary>Hoe werkt de dagelijkse reeks (streak)?</summary>
+      <p>Je reeks telt het aantal dagen op rij dat je de app hebt geopend. Sla je een dag over, dan begint de
+      teller opnieuw &mdash; je opgespaarde bonuslevens houd je wel gewoon.</p>
+    </details>
+
+    <details><summary>Ik heb een dag gemist. Is mijn reeks weg?</summary>
+      <p>Niet meteen: je hebt <strong>één gratis streak-freeze per maand</strong>. Mis je precies één dag en heb je
+      je freeze die maand nog niet gebruikt, dan wordt je reeks automatisch beschermd en loopt hij gewoon door.</p>
+    </details>
+
+    <details><summary>Wat leveren de mijlpalen op?</summary>
+      <p>Bij 7, 30 en 100 dagen op rij verdien je een badge én gaat het maximum aantal bonuslevens dat je kunt
+      sparen permanent omhoog.</p>
+    </details>
+  </section>
+
+  <section class="reveal">
+    <h2>Ranglijst en privacy</h2>
+
+    <details><summary>Hoe verander ik mijn naam in de ranglijst?</summary>
+      <p>Ga naar <em>Instellingen</em> en pas je weergavenaam aan (3 tot 20 tekens: letters, cijfers, spaties,
+      streepjes en underscores). Die naam is zichtbaar voor andere spelers, dus gebruik liever niet je echte naam.</p>
+    </details>
+
+    <details><summary>Welke gegevens verzamelen jullie?</summary>
+      <p>Je voortgang, levens, streak en instellingen blijven op je toestel. Voor de online ranglijst gebruiken we
+      een anoniem account (een willekeurig ID, zonder e-mailadres of wachtwoord) en slaan we per uitgespeeld level
+      je weergavenaam en je resultaat op. Alle details staan in het <a href="../">privacybeleid</a>.</p>
+    </details>
+
+    <details><summary>Hoe verwijder ik mijn gegevens?</summary>
+      <p>Je lokale gegevens (voortgang, levens, instellingen) wis je door de app te verwijderen. Wil je ook je
+      ranglijst-resultaten laten verwijderen, mail dan <a href="mailto:smartapps.ev@gmail.com">smartapps.ev@gmail.com</a>
+      met je weergavenaam erbij.</p>
+    </details>
+
+    <details><summary>Mijn score staat niet in de ranglijst</summary>
+      <p>Controleer je internetverbinding: zonder verbinding wordt je resultaat bewaard en later automatisch
+      verstuurd. Alleen je persoonlijke record per level komt in de ranglijst, dus een score die lager is dan je
+      eigen beste resultaat vervangt die niet.</p>
+    </details>
+  </section>
+
+  <section class="reveal">
+    <h2>Instellingen en advertenties</h2>
+
+    <details><summary>Hoe pas ik het thema aan?</summary>
+      <p>Ga naar <em>Instellingen &rarr; Thema</em> en kies licht, donker of &ldquo;systeem&rdquo;. Nieuwe
+      installaties starten in het lichte thema.</p>
+    </details>
+
+    <details><summary>In welke talen is de app beschikbaar?</summary>
+      <p>De app-interface is beschikbaar in het Nederlands, Engels en Duits. Je kiest de taal bij
+      <em>Instellingen</em>.</p>
+    </details>
+
+    <details><summary>Kan ik het geluid, de muziek of trillingen uitzetten?</summary>
+      <p>Ja, bij <em>Instellingen</em> vind je aparte schakelaars voor geluidseffecten, achtergrondmuziek en
+      trilling (haptics).</p>
+    </details>
+
+    <details><summary>Kan ik de advertenties uitzetten?</summary>
+      <p>De advertenties houden de app gratis en zijn niet uit te schakelen. Beloningsvideo's zijn altijd
+      vrijwillig: je kiest zelf of je er één bekijkt voor een hint, een extra leven of extra tijd.</p>
+    </details>
+  </section>
+
+  <footer class="site">
+    <p>&copy; 2026 MAR-Team &middot; Arrow Path GO &middot; <a href="../">Privacybeleid</a></p>
   </footer>
 </div>
+<script src="../assets/site.js"></script>
 </body>
 </html>
